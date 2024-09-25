@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    /*retia a margem automatica */
+    padding: 0;
+    /*ele retira o espaco dentro de um bloco  */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*sans-serif; altera fonte  */
+    line-height: 1.6;
+    /*espaçamento entre linhas */
+    background-color: #f9f9f9;
+    /*cor do fundo */
+}
+
+nav {
+    position: fixed;
+    /*fixou a barra de navegação */
+    top: 0;
+    /*tirou a margem do topo  */
+    width: 100%;
+    /*largura da barra de navegação  */
+    background-color: #3333338c;
+    /*cor da barra  */
+    padding: 20px 0;
+    /*ele adiciona uma margem no topo e em baixo  */
+}
+
+nav ul {
+    list-style-type: none;
+    /*estilo da linha */
+    display: flex;
+    /* deixa pagina flexivel */
+    justify-content: center;
+    /*alinha */
+}
+
+nav ul li {
+    margin: o 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    /*decoraçao do texto  */
+    font-size: 18px;
+    /*tamanho da fonte  */
+    padding: 10px;
+    /*espaçamento entre letras  */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7b29ff;
+    /*altera a cor das letrao ao passar o mouse em cima  */
+}
+
+section:not(#home) {
+    padding: 100px 20px;
+    /*espaçamento */
+    text-align: center;
+    /*alinha texto no centro  */
+    display: flex;
+    /*pagina flexivel */
+    justify-content: center;
+    /*complemento do display  */
+    align-items: center;
+    /*alinhar itens  */
+    height: 100vh;
+    /*espaçamento */
+}
+
+#home {
+    /* background-color: #4a90e2; */
+    background-image: url(https://www.psd.com/cdn/shop/files/Collection_Banner_Mobile_-_Ja_Morant_Collectionly.png?v=1713559902);
+    /*imagem de fundo  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*nao repetir a imagem */
+    color: #000000;
+    /*cor  */
+    height: 100vh;
+    /*tamanho */
+    text-align: center;
+    /*alinhamento  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*alinha  */
+    align-items: center;
+    /*alinhar itens */
+    font-size: 1.5em;
+    /*tamanho fonte em unidades relativas  */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.content {
+    display: flex;
+    /*pagina flexivel  */
+    flex-direction: row;
+    align-items: center;
+    /*alinhar itens  */
+    justify-content: center;
+    /*alinhar  */
+}
+
+.content .img {
+    width: 400px;
+    /*largura  */
+    height: 300px;
+    /*altura */
+    object-fit: cover;
+    margin-right: 20px;
+    /*margem para direita  */
+    border-radius: 8px;
+    /*borda arredondada  */
+}
+
+.content .text {
+    max-width: 600px;
+    /*largura maxima  */
+    text-align: left;
+    /* alinhamento do texto para esquerda  */
+}
+
+.content .text h2 {
+    font-size: 2em;
+    /*tamanho fonte  */
+    margin-bottom: 20px;
+    /*margem da parte de baixo  */
+    color: #333;
+    /*cor  */
+    margin: 10px;
+}
+
+.content .text p {
+    font-size: 1.1em;
+    /*tamanho fonte  */
+    color: #000000;
+    /*cor  */
+    margin: 10px;
+}
+
+#services {
+    background-color: #ffffff;
+    /* cor de fundo  */
+}
+
+#about {
+    background-color: #357793;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+.cta-button {
+    background-color: #7b29ff;
+    color: #000000;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 1s ease, transform 1s ease;
+}
+footer{
+    text-align: center;
+}
